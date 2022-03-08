@@ -1,0 +1,1222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ebayadModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ebayadModelStoreContainer">
+    <EntitySet Name="aa_records" EntityType="ebayadModel.Store.aa_records" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="account_category" EntityType="ebayadModel.Store.account_category" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="account_tittle_table" EntityType="ebayadModel.Store.account_tittle_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="acctg_receive_logs" EntityType="ebayadModel.Store.acctg_receive_logs" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="allotment" EntityType="ebayadModel.Store.allotment" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="allotment_items" EntityType="ebayadModel.Store.allotment_items" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="april" EntityType="ebayadModel.Store.april" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="audit_result" EntityType="ebayadModel.Store.audit_result" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="audit_status" EntityType="ebayadModel.Store.audit_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="auditor_table" EntityType="ebayadModel.Store.auditor_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="auditors_note" EntityType="ebayadModel.Store.auditors_note" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="bank_details" EntityType="ebayadModel.Store.bank_details" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="budget_status" EntityType="ebayadModel.Store.budget_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="bundle_no" EntityType="ebayadModel.Store.bundle_no" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="cafoa" EntityType="ebayadModel.Store.cafoa" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="cafoa_items" EntityType="ebayadModel.Store.cafoa_items" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="cafoa_status" EntityType="ebayadModel.Store.cafoa_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="cash_aa" EntityType="ebayadModel.Store.cash_aa" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="cash_receive" EntityType="ebayadModel.Store.cash_receive" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="cash_transmitallpayroll" EntityType="ebayadModel.Store.cash_transmitallpayroll" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="component_table" EntityType="ebayadModel.Store.component_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="department_table" EntityType="ebayadModel.Store.department_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="direct_payment" EntityType="ebayadModel.Store.direct_payment" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="documents_logs" EntityType="ebayadModel.Store.documents_logs" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="fund_source" EntityType="ebayadModel.Store.fund_source" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="fund_type" EntityType="ebayadModel.Store.fund_type" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="fur" EntityType="ebayadModel.Store.fur" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="fur_items" EntityType="ebayadModel.Store.fur_items" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="fur_status" EntityType="ebayadModel.Store.fur_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="liquidation_table" EntityType="ebayadModel.Store.liquidation_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="lr_cashtransfer_items" EntityType="ebayadModel.Store.lr_cashtransfer_items" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="lr_cashtransfer_table" EntityType="ebayadModel.Store.lr_cashtransfer_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="lr_sdo_items" EntityType="ebayadModel.Store.lr_sdo_items" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="lr_sdo_table" EntityType="ebayadModel.Store.lr_sdo_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="lr_travel_items" EntityType="ebayadModel.Store.lr_travel_items" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="lr_travel_table" EntityType="ebayadModel.Store.lr_travel_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="override_status" EntityType="ebayadModel.Store.override_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="payroll_deductions" EntityType="ebayadModel.Store.payroll_deductions" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="payroll_table" EntityType="ebayadModel.Store.payroll_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="po_contract_status" EntityType="ebayadModel.Store.po_contract_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="po_items" EntityType="ebayadModel.Store.po_items" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="po_table" EntityType="ebayadModel.Store.po_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="ppa_object_account" EntityType="ebayadModel.Store.ppa_object_account" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="ppa_table" EntityType="ebayadModel.Store.ppa_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="procurement_air_items" EntityType="ebayadModel.Store.procurement_air_items" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="procurement_air_table" EntityType="ebayadModel.Store.procurement_air_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="procurement_cafoa_status" EntityType="ebayadModel.Store.procurement_cafoa_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="procurement_delivery_payment_type" EntityType="ebayadModel.Store.procurement_delivery_payment_type" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="procurement_voucher_signatory" EntityType="ebayadModel.Store.procurement_voucher_signatory" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="rci_table_logs" EntityType="ebayadModel.Store.rci_table_logs" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="receiving_status" EntityType="ebayadModel.Store.receiving_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="release_docs_gso" EntityType="ebayadModel.Store.release_docs_gso" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="release_docs_peningyearend_obli" EntityType="ebayadModel.Store.release_docs_peningyearend_obli" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="release_status" EntityType="ebayadModel.Store.release_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table" EntityType="ebayadModel.Store.released_docs_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_admin" EntityType="ebayadModel.Store.released_docs_table_admin" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_bac" EntityType="ebayadModel.Store.released_docs_table_bac" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_cash" EntityType="ebayadModel.Store.released_docs_table_cash" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_cbo" EntityType="ebayadModel.Store.released_docs_table_cbo" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_finance" EntityType="ebayadModel.Store.released_docs_table_finance" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_furs" EntityType="ebayadModel.Store.released_docs_table_furs" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_raao_cafoa" EntityType="ebayadModel.Store.released_docs_table_raao_cafoa" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_rrc" EntityType="ebayadModel.Store.released_docs_table_rrc" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_summrypayroll" EntityType="ebayadModel.Store.released_docs_table_summrypayroll" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_toro_cafoa" EntityType="ebayadModel.Store.released_docs_table_toro_cafoa" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="released_docs_table_toro_cafoa_claims" EntityType="ebayadModel.Store.released_docs_table_toro_cafoa_claims" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="remarks_table" EntityType="ebayadModel.Store.remarks_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="sample" EntityType="ebayadModel.Store.sample" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="sms_container" EntityType="ebayadModel.Store.sms_container" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="summary_payroll" EntityType="ebayadModel.Store.summary_payroll" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="summary_payroll_items" EntityType="ebayadModel.Store.summary_payroll_items" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="supplemental" EntityType="ebayadModel.Store.supplemental" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="supplemental_destination_account" EntityType="ebayadModel.Store.supplemental_destination_account" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="supplemental_source_account" EntityType="ebayadModel.Store.supplemental_source_account" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="supplemental_type" EntityType="ebayadModel.Store.supplemental_type" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="toro_category" EntityType="ebayadModel.Store.toro_category" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="tracer" EntityType="ebayadModel.Store.tracer" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="tracer_category" EntityType="ebayadModel.Store.tracer_category" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="tracer_doc_requirements" EntityType="ebayadModel.Store.tracer_doc_requirements" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="tracer_doc_requirements_subcat" EntityType="ebayadModel.Store.tracer_doc_requirements_subcat" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="tracer_doc_requirements_subcat_ii" EntityType="ebayadModel.Store.tracer_doc_requirements_subcat_ii" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="tracking_status" EntityType="ebayadModel.Store.tracking_status" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="transaction_table" EntityType="ebayadModel.Store.transaction_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="transaction_type" EntityType="ebayadModel.Store.transaction_type" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="transfer_logs" EntityType="ebayadModel.Store.transfer_logs" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="transmittal_records" EntityType="ebayadModel.Store.transmittal_records" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="urgentstatus" EntityType="ebayadModel.Store.urgentstatus" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="user_status_table" EntityType="ebayadModel.Store.user_status_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="user_table" EntityType="ebayadModel.Store.user_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="user_type_table" EntityType="ebayadModel.Store.user_type_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="voucher_deduction_type" EntityType="ebayadModel.Store.voucher_deduction_type" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="voucher_deductions" EntityType="ebayadModel.Store.voucher_deductions" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="voucher_table" EntityType="ebayadModel.Store.voucher_table" store:Type="Tables" Schema="ebayad" />
+    <EntitySet Name="yearend_obligations" EntityType="ebayadModel.Store.yearend_obligations" store:Type="Tables" Schema="ebayad" />
+  </EntityContainer>
+  <EntityType Name="aa_records">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRANSMITTAL_NO" Type="varchar" MaxLength="255" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="CY" Type="varchar" MaxLength="255" />
+    <Property Name="BANK" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="account_category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ACCOUNT_CATEGORY" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="account_tittle_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FUNCTION_CODE" Type="varchar" MaxLength="50" />
+    <Property Name="ACCOUNT_TITTLE" Type="varchar" MaxLength="250" />
+    <Property Name="ACCOUNT_CATEGORY_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="acctg_receive_logs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NUMBER" Type="varchar" MaxLength="255" />
+    <Property Name="RECEIVED_DATE" Type="datetime" />
+    <Property Name="URGENT" Type="int" />
+    <Property Name="AUDITOR_ID" Type="int" />
+    <Property Name="AUDIT_STATUS_ID" Type="int" />
+    <Property Name="TIME_START" Type="datetime" />
+    <Property Name="TIME_END" Type="datetime" />
+    <Property Name="AUDIT_RESULT" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="ACCOUNTING_NUMBER" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="allotment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="ARO_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="DATE_ISSUE" Type="date" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="date" />
+  </EntityType>
+  <EntityType Name="allotment_items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ALLOTMENT_ID" Type="int" />
+    <Property Name="ACCOUNT_TITLE_ID" Type="int" />
+    <Property Name="AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="april">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NUMBER" Type="varchar" MaxLength="11" />
+    <Property Name="EXPLANATION" Type="varchar" MaxLength="255" />
+    <Property Name="OFFICE" Type="varchar" MaxLength="255" />
+    <Property Name="RESPO CODE" Type="varchar" MaxLength="255" />
+    <Property Name="RECEIVED DATE" Type="datetime" />
+    <Property Name="RESULT" Type="varchar" MaxLength="255" />
+    <Property Name="STATUS" Type="varchar" MaxLength="255" />
+    <Property Name="RELEASE DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="audit_result">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AUDIT_RESULT" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="audit_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AUDIT_STATUS" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="auditor_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FULLNAME" Type="varchar" MaxLength="250" />
+    <Property Name="USER_TABLE_ID" Type="int" />
+    <Property Name="POSITION" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="auditors_note">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EXPLANATION" Type="longtext" />
+  </EntityType>
+  <EntityType Name="bank_details">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BANK" Type="varchar" MaxLength="255" />
+    <Property Name="BANK_DESCRIPTION" Type="varchar" MaxLength="255" />
+    <Property Name="BRANCH" Type="varchar" MaxLength="255" />
+    <Property Name="BANK_MANAGER" Type="varchar" MaxLength="255" />
+    <Property Name="BANK_ACCTNO" Type="varchar" MaxLength="255" />
+    <Property Name="FUND_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="budget_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BUDGET_STATUS" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="bundle_no">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BUNDLE_NO" Type="int" />
+    <Property Name="OBR_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="cafoa">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="OBLIGATION_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="EXPLANATION" Type="longtext" />
+    <Property Name="PAYEE" Type="varchar" MaxLength="500" />
+    <Property Name="ADDRESS" Type="longtext" />
+    <Property Name="TIN" Type="varchar" MaxLength="50" />
+    <Property Name="AMOUNT_REQUESTED" Type="double" />
+    <Property Name="APPROVED_AMOUNT" Type="double" />
+    <Property Name="FINAL_AMOUNT" Type="double" />
+    <Property Name="REQUESTING_OFFICIAL" Type="varchar" MaxLength="300" />
+    <Property Name="OFFICAIL_POSITION" Type="varchar" MaxLength="255" />
+    <Property Name="ENTRY_DATE" Type="date" />
+    <Property Name="FUND_TYPE" Type="int" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="TRANSACTION_TYPE_ID" Type="int" />
+    <Property Name="LAST_UPDATE" Type="datetime" />
+    <Property Name="LAST_UPDATE_BY" Type="int" />
+    <Property Name="CAFOA_STATUS_ID" Type="int" />
+    <Property Name="PROCUREMT" Type="int" />
+    <Property Name="CANCELLED_DOC_NUM" Type="varchar" MaxLength="50" />
+    <Property Name="TRACER_ID" Type="int" />
+    <Property Name="TRACER_CATEGORY_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="cafoa_items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CAFOA_ID" Type="int" />
+    <Property Name="FUNCTION" Type="varchar" MaxLength="255" />
+    <Property Name="PPA_ACCOUNT_ID" Type="int" />
+    <Property Name="AMOUNT" Type="double" />
+    <Property Name="FINAL_AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="cafoa_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CAFOA_STATUS" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="cash_aa">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NUMBER" Type="varchar" MaxLength="255" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="AA_NO" Type="varchar" MaxLength="255" />
+    <Property Name="AA_STATUS" Type="int" />
+    <Property Name="FUND_SOURCE" Type="varchar" MaxLength="255" />
+    <Property Name="BANK_ID" Type="int" />
+    <Property Name="DATE_PAID" Type="datetime" />
+    <Property Name="TRANSACTION_DATE" Type="datetime" />
+    <Property Name="DV_NUMBER" Type="varchar" MaxLength="255" />
+    <Property Name="CHECK_DATE" Type="datetime" />
+    <Property Name="CHECK_NUMBER" Type="varchar" MaxLength="11" />
+    <Property Name="CHECK_STATUS" Type="int" />
+    <Property Name="REMARKS" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="cash_receive">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NUMBER" Type="varchar" MaxLength="255" />
+    <Property Name="RECEIVED_DATE" Type="datetime" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="CASH_SERIAL_NO" Type="varchar" MaxLength="255" />
+    <Property Name="TRANSMITTAL_STATUS" Type="int" />
+    <Property Name="FUND_SOURCE" Type="varchar" MaxLength="255" />
+    <Property Name="BANK_ID" Type="int" />
+    <Property Name="DATE_PAID" Type="int" />
+    <Property Name="TRANSACTION_DATE" Type="datetime" />
+    <Property Name="ACCOUNTING_NUMBER" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="cash_transmitallpayroll">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NUMBER" Type="varchar" MaxLength="255" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="TRANSMITTAL_NO" Type="varchar" MaxLength="255" />
+    <Property Name="TRANSMITTAL_STATUS" Type="int" />
+    <Property Name="BANK_ID" Type="int" />
+    <Property Name="TRANSACTION_DATE" Type="datetime" />
+    <Property Name="PAYROLL_NUMBER" Type="varchar" MaxLength="255" />
+    <Property Name="FUND_SOURCE" Type="varchar" MaxLength="255" />
+    <Property Name="PAID_DATE" Type="datetime" />
+    <Property Name="FIRST_HALF_AMOUNT" Type="double" />
+    <Property Name="SECOND_HALF_AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="component_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PPD_ID" Type="int" />
+    <Property Name="COMPONENT" Type="varchar" MaxLength="500" />
+    <Property Name="NO" Type="int" />
+  </EntityType>
+  <EntityType Name="department_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DEPARTMENT_NAME" Type="text" />
+    <Property Name="CODE" Type="varchar" MaxLength="50" />
+    <Property Name="DESCRIPTION" Type="text" />
+    <Property Name="OFFICER" Type="varchar" MaxLength="250" />
+    <Property Name="POSITION" Type="varchar" MaxLength="255" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="direct_payment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="EXPLAINATION" Type="longtext" />
+    <Property Name="PAYEE" Type="varchar" MaxLength="255" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="255" />
+    <Property Name="TIN" Type="varchar" MaxLength="50" />
+    <Property Name="AMOUNT" Type="double" />
+    <Property Name="FINAL_AMOUNT" Type="double" />
+    <Property Name="REQUESTING_OFFICIAL" Type="varchar" MaxLength="100" />
+    <Property Name="OFFICAIL_POSITION" Type="varchar" MaxLength="100" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="FUND_TYPE" Type="int" />
+    <Property Name="TRANSACTION_TYPE" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="LAST_UPDATE" Type="datetime" />
+    <Property Name="UPDATED_BY" Type="int" />
+    <Property Name="TRACER_ID" Type="int" />
+    <Property Name="TRACER_CATEGORY_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="documents_logs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="RECEIVED_STATUS" Type="int" />
+    <Property Name="RECEIVED_DATE" Type="datetime" />
+    <Property Name="APPROVED_STATUS" Type="int" />
+    <Property Name="RELEASE_STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="REMARKS" Type="varchar" MaxLength="255" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="FUNDCONTROLLER_ID" Type="int" />
+    <Property Name="APPROVED_DATE" Type="datetime" />
+    <Property Name="BATCH_NO" Type="int" />
+  </EntityType>
+  <EntityType Name="fund_source">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FUND_CODE" Type="varchar" MaxLength="50" />
+    <Property Name="FUND_NAME" Type="varchar" MaxLength="500" />
+    <Property Name="FUND_NO" Type="int" />
+  </EntityType>
+  <EntityType Name="fund_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FUND_TYPE" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="fur">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="OBLIGATION_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="EXPLANATION" Type="longtext" />
+    <Property Name="PAYEE" Type="varchar" MaxLength="500" />
+    <Property Name="ADDRESS" Type="longtext" />
+    <Property Name="TIN" Type="varchar" MaxLength="20" />
+    <Property Name="AMOUNT_REQUESTED" Type="double" />
+    <Property Name="APPROVED_AMOUNT" Type="double" />
+    <Property Name="FINAL_AMOUNT" Type="double" />
+    <Property Name="REQUESTING_OFFICIAL" Type="varchar" MaxLength="300" />
+    <Property Name="OFFICAIL_POSITION" Type="varchar" MaxLength="255" />
+    <Property Name="ENTRY_DATE" Type="date" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="TRANSACTION_TYPE_ID" Type="int" />
+    <Property Name="LAST_UPDATE" Type="datetime" />
+    <Property Name="LAST_UPDATE_BY" Type="int" />
+    <Property Name="CONTROLLER" Type="varchar" MaxLength="255" />
+    <Property Name="CONTROLLED_DATE" Type="datetime" />
+    <Property Name="BANK_NO" Type="int" />
+    <Property Name="SL_CODE" Type="varchar" MaxLength="255" />
+    <Property Name="FUR_STATUS" Type="int" />
+    <Property Name="PROCUREMENT" Type="int" />
+    <Property Name="CY" Type="varchar" MaxLength="255" />
+    <Property Name="TRACER_ID" Type="int" />
+    <Property Name="TRACER_CATEGORY_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="fur_items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FURS_ID" Type="int" />
+    <Property Name="FUNCTION" Type="varchar" MaxLength="255" />
+    <Property Name="PPA_ACCOUNT_ID" Type="int" />
+    <Property Name="AMOUNT" Type="double" />
+    <Property Name="FINAL_AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="fur_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="STATUS" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="liquidation_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NO" Type="varchar" MaxLength="255" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="CLAIMANT" Type="varchar" MaxLength="255" />
+    <Property Name="EXPLANATION" Type="longtext" />
+    <Property Name="LR_DATE" Type="date" />
+    <Property Name="ORIGINAL_AMOUNT" Type="double" />
+    <Property Name="AUDITED_AMOUNT" Type="double" />
+    <Property Name="DV_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="DV_AMOUNT" Type="double" />
+    <Property Name="DV_DATE" Type="date" />
+    <Property Name="REFUND_AMOUNT" Type="double" />
+    <Property Name="FINAL_REFUND" Type="double" />
+    <Property Name="REIMBURSE_AMOUNT" Type="double" />
+    <Property Name="FINAL_REIMBURSE" Type="double" />
+    <Property Name="LR_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="OR_NUMBER" Type="varchar" MaxLength="25" />
+    <Property Name="FUND_SOURCE_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="lr_cashtransfer_items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LR_CASHTRANSFER_ID" Type="int" />
+    <Property Name="PARTICULARS" Type="varchar" />
+    <Property Name="AMOUNT" Type="double" />
+    <Property Name="FINAL_AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="lr_cashtransfer_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NO" Type="varchar" MaxLength="50" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="CLAIMANT" Type="varchar" MaxLength="100" />
+    <Property Name="POSITION" Type="varchar" MaxLength="100" />
+    <Property Name="LR_DATE" Type="date" />
+    <Property Name="EXPLANATION" Type="varchar" MaxLength="500" />
+    <Property Name="FUND_SOURCE_ID" Type="int" />
+    <Property Name="DV_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="DV_AMOUNT" Type="double" />
+    <Property Name="LR_AMOUNT" Type="double" />
+    <Property Name="FINAL_AMOUNT" Type="double" />
+    <Property Name="REFUNDABLE_AMOUNT" Type="double" />
+    <Property Name="FINAL_REFUND" Type="double" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="date" />
+    <Property Name="LAST_UPDATE" Type="date" />
+    <Property Name="LAST_UPDATE_BY" Type="int" />
+  </EntityType>
+  <EntityType Name="lr_sdo_items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LR_SDO_TABLE_ID" Type="int" />
+    <Property Name="PAYROLL_NO" Type="varchar" MaxLength="50" />
+    <Property Name="PAYROLL_NAME" Type="varchar" MaxLength="100" />
+    <Property Name="RESPO" Type="varchar" MaxLength="50" />
+    <Property Name="AMOUT" Type="double" />
+    <Property Name="ACTUAL" Type="double" />
+    <Property Name="DIFF" Type="double" />
+    <Property Name="FINAL_AMOUNT" Type="double" />
+    <Property Name="FINAL_ACTUAL" Type="double" />
+    <Property Name="FINAL_DIFF" Type="double" />
+  </EntityType>
+  <EntityType Name="lr_sdo_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NO" Type="varchar" MaxLength="50" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="CLAIMANT" Type="varchar" MaxLength="100" />
+    <Property Name="POSITION" Type="varchar" MaxLength="100" />
+    <Property Name="LR_DATE" Type="date" />
+    <Property Name="EXPLANATION" Type="varchar" MaxLength="500" />
+    <Property Name="FUND_SOURCE_ID" Type="int" />
+    <Property Name="DV_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="DV_AMOUNT" Type="double" />
+    <Property Name="LR_AMOUNT" Type="double" />
+    <Property Name="FIANL_AMOUNT" Type="double" />
+    <Property Name="REFUNDABLE_AMOUNT" Type="double" />
+    <Property Name="FINAL_REFUND" Type="double" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="date" />
+    <Property Name="LAST_UPDATE" Type="date" />
+    <Property Name="LAST_UPDATE_BY" Type="int" />
+  </EntityType>
+  <EntityType Name="lr_travel_items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="LR_TRAVEL_TABLE_ID" Type="int" />
+    <Property Name="DATE" Type="date" />
+    <Property Name="PARTICULARS" Type="longtext" />
+    <Property Name="DEPARTURE" Type="time" />
+    <Property Name="ARRIVAL" Type="time" />
+    <Property Name="TRANSPO_KIND" Type="varchar" MaxLength="255" />
+    <Property Name="OTHERS" Type="double" />
+    <Property Name="FINAL_OTHERS" Type="double" />
+    <Property Name="PER_DIEM" Type="double" />
+    <Property Name="FINAL_PER_DIEM" Type="double" />
+    <Property Name="DTE" Type="double" />
+    <Property Name="FINAL_DTE" Type="double" />
+    <Property Name="TOTAL" Type="double" />
+    <Property Name="FINAL_TOTAL" Type="double" />
+  </EntityType>
+  <EntityType Name="lr_travel_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="DEPARTMENT_ID" Type="int" Nullable="false" />
+    <Property Name="CLAIMANT" Type="varchar" MaxLength="100" />
+    <Property Name="POSISTION" Type="varchar" MaxLength="100" />
+    <Property Name="LR_DATE" Type="datetime" />
+    <Property Name="EXPLANATION" Type="longtext" />
+    <Property Name="FUND_SOURCE_ID" Type="int" />
+    <Property Name="AMOUNT" Type="double" />
+    <Property Name="FINAL_AMOUNT" Type="double" />
+    <Property Name="DV_AMOUNT" Type="double" />
+    <Property Name="DV_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="DV_DATE" Type="date" />
+    <Property Name="REFUND_AMOUNT" Type="double" />
+    <Property Name="FINAL_REFUND_AMOUNT" Type="double" />
+    <Property Name="REIMBURSE_AMOUNT" Type="double" />
+    <Property Name="FINAL_REIMBURSE_AMOUNT" Type="double" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="CHECK_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="CHECK_DATE" Type="date" />
+    <Property Name="LAST_UPDATE" Type="datetime" />
+    <Property Name="LAST_UPDATE_BY" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="override_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="STATUS" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="payroll_deductions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PAYROLL_ID" Type="int" />
+    <Property Name="PAYROLL_DEDUCTION" Type="varchar" MaxLength="5000" />
+    <Property Name="AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="payroll_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="PAYEE" Type="varchar" MaxLength="250" />
+    <Property Name="TIN" Type="varchar" MaxLength="50" />
+    <Property Name="RESPO" Type="varchar" MaxLength="20" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="500" />
+    <Property Name="OBR_NO" Type="varchar" MaxLength="50" />
+    <Property Name="OFFICE_UNIT" Type="varchar" MaxLength="200" />
+    <Property Name="ACCOUNT_CODES" Type="varchar" MaxLength="500" />
+    <Property Name="EXPLANATION" Type="longtext" />
+    <Property Name="GROSS_AMOUNT" Type="double" />
+    <Property Name="DEDUCTION_AMOUNT" Type="double" />
+    <Property Name="TOTAL_AMOUNT" Type="double" />
+    <Property Name="PAYROLL_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="FUND_TYPE" Type="int" />
+    <Property Name="OBR_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="po_contract_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PO_CONTRACT_STATUS" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="po_items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PO_ID" Type="int" />
+    <Property Name="CAFOA_DOCUMENT_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="PROCUREMENT_CAFOA_STATUS" Type="int" />
+  </EntityType>
+  <EntityType Name="po_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NO" Type="varchar" MaxLength="50" />
+    <Property Name="CONTRACT_PO_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="CONTRACT_PO_DATE" Type="date" />
+    <Property Name="CONTRACT_PO_AMOUNT" Type="double" />
+    <Property Name="PO_CONTRACT_STATUS_ID" Type="int" />
+    <Property Name="EXPLANATION" Type="longtext" />
+    <Property Name="ENTRY_DATE" Type="date" />
+    <Property Name="PAYEE" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="ppa_object_account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PPA_ID" Type="int" />
+    <Property Name="COMPONENT_ID" Type="int" />
+    <Property Name="RESOURCE" Type="varchar" />
+    <Property Name="ACCOUNT_TITTLE_ID" Type="int" />
+    <Property Name="BUDGET_STATUS_ID" Type="int" />
+    <Property Name="OUTPUT_NO" Type="int" />
+    <Property Name="FUND_SOURCE_ID" Type="int" />
+    <Property Name="AMOUNT" Type="double" />
+    <Property Name="ALLOTMENT" Type="double" />
+  </EntityType>
+  <EntityType Name="ppa_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PPA_NAME" Type="varchar" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="PPA_NO" Type="varchar" MaxLength="10" />
+    <Property Name="M_Y_APPLICABLE" Type="date" />
+  </EntityType>
+  <EntityType Name="procurement_air_items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PROCUREMENT_AIR_ID" Type="int" />
+    <Property Name="PO_CONTRACT_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="PROCUREMENT_DELIVERY_PAYMENT_TYPE_ID" Type="int" />
+    <Property Name="AIR_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="AIR_DATE" Type="datetime" />
+    <Property Name="AMOUNT" Type="double" />
+    <Property Name="AIR_STATUS_PAID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="procurement_air_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PO_ID" Type="int" Nullable="false" />
+    <Property Name="PO_CONTRACT_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="TOTAL_PO_AMOUNT" Type="double" />
+    <Property Name="CURRENT_AIR_AMOUNT" Type="double" />
+    <Property Name="CURRENT_AIR_BALANCE" Type="double" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="LAST_UPDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="procurement_cafoa_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PROCUREMENT_CAFOA_STATUS" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="procurement_delivery_payment_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PAYMENT_DELIVERY_TYPE" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="procurement_voucher_signatory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VOICHER_ID" Type="int" />
+    <Property Name="SIGNATORY" Type="varchar" MaxLength="255" />
+    <Property Name="POSITION" Type="varchar" MaxLength="255" />
+    <Property Name="DIRECT_PAYMENT_TABLE_ID" Type="int" />
+    <Property Name="PO_TABLE_ID" Type="int" />
+    <Property Name="CONTRACT_PO_NUMBER" Type="varchar" MaxLength="255" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="rci_table_logs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RELEASED_DOC_TABLE_RRC_ID" Type="int" />
+    <Property Name="DATE_ENTRY" Type="datetime" />
+  </EntityType>
+  <EntityType Name="receiving_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RECEIVE_STATUS" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="release_docs_gso">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="po_table_id" Type="int" />
+    <Property Name="document_number" Type="varchar" MaxLength="50" />
+    <Property Name="batch_number" Type="int" />
+    <Property Name="status" Type="int" />
+    <Property Name="release_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="release_docs_peningyearend_obli">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OBR_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="BATCH_NO" Type="int" />
+  </EntityType>
+  <EntityType Name="release_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="RELEASE_STATUS" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="released_docs_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="ACCTG_RECEIVE_LOGS_ID" Type="int" />
+    <Property Name="FOR_OBLIGATION" Type="int" />
+  </EntityType>
+  <EntityType Name="released_docs_table_admin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="DOCUMENT_LOGS_ID" Type="int" />
+    <Property Name="TRANSACTION_TYPE_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="released_docs_table_bac">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="PO_ID" Type="int" />
+    <Property Name="RECIPIENT_DEPARTMENT_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="released_docs_table_cash">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="CASH_AA_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="released_docs_table_cbo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="DOCUMENT_LOG_ID" Type="int" />
+    <Property Name="PROCUREMENT" Type="int" />
+  </EntityType>
+  <EntityType Name="released_docs_table_finance">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="released_docs_table_furs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="PROCUREMENT" Type="int" />
+    <Property Name="DOCUMENT_LOG_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="released_docs_table_raao_cafoa">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="PROCUREMENT" Type="int" />
+  </EntityType>
+  <EntityType Name="released_docs_table_rrc">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DV_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="REPORT_NO" Type="varchar" MaxLength="20" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="BANK_ID" Type="int" />
+    <Property Name="CASH_AA_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="released_docs_table_summrypayroll">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="PJ_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="REPORT_NO" Type="varchar" MaxLength="20" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="BANK_ID" Type="int" />
+    <Property Name="CASH_TRANSMITALPAYROLL_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="released_docs_table_toro_cafoa">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="released_docs_table_toro_cafoa_claims">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="BATCH_NO" Type="int" />
+    <Property Name="STATUS" Type="int" />
+    <Property Name="RELEASE_DATE" Type="datetime" />
+    <Property Name="CATEGORY_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="remarks_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRANSACTION_ID" Type="int" />
+    <Property Name="REMARKS" Type="varchar" MaxLength="255" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="sample">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FULLNAME" Type="varchar" MaxLength="255" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="255" />
+    <Property Name="CONTACT" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="sms_container">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SMS_BODY" Type="varchar" MaxLength="500" />
+    <Property Name="MOBILE_NUM" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="summary_payroll">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SDO_NAME" Type="varchar" MaxLength="150" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="EXPLANATION" Type="varchar" MaxLength="255" />
+    <Property Name="DOCUMENT_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="TOTAL" Type="double" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="FUND_TYPE" Type="int" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="LAST_UPDATE" Type="date" />
+    <Property Name="LAST_UPDATE_BY" Type="int" />
+    <Property Name="TRACER_ID" Type="int" />
+    <Property Name="TRACER_CATEGORY_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="summary_payroll_items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SUMMARY_PAROLL_ID" Type="int" />
+    <Property Name="PJ_NO" Type="varchar" MaxLength="50" />
+    <Property Name="PAYEE" Type="varchar" MaxLength="150" />
+    <Property Name="RESPO" Type="varchar" MaxLength="20" />
+    <Property Name="EXPLANATION" Type="varchar" MaxLength="500" />
+    <Property Name="AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="supplemental">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DEPARTMENT_ID" Type="int" />
+    <Property Name="DESCRIPTION" Type="longtext" />
+    <Property Name="SUPPLEMENTAL_TYPE_ID" Type="int" />
+    <Property Name="APPROVE_DATE" Type="date" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="REASON_ONE" Type="longtext" />
+    <Property Name="REASON_TWO" Type="longtext" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="UPDATED_BY" Type="int" />
+    <Property Name="LAST_UPDATE" Type="datetime" />
+  </EntityType>
+  <EntityType Name="supplemental_destination_account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SUPPLEMENTAL_ID" Type="int" />
+    <Property Name="DESTINATION_PPA_ACCOUNT" Type="int" />
+    <Property Name="AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="supplemental_source_account">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SUPPLEMENTAL_ID" Type="int" />
+    <Property Name="SOURCE_PPA_ACCOUNT" Type="int" />
+    <Property Name="AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="supplemental_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SUPPLEMENTAL_TYPE" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="toro_category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CATEGORY_NAME" Type="varchar" MaxLength="255" />
+    <Property Name="DESCRIPTION" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tracer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRACER_NAME" Type="varchar" MaxLength="500" />
+    <Property Name="TRACER_NO" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tracer_category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRACER_ID" Type="int" />
+    <Property Name="TRACER_SUB_CAT" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="tracer_doc_requirements">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRACER_CAT_ID" Type="int" />
+    <Property Name="REQUIREMENTS" Type="varchar" MaxLength="255" />
+    <Property Name="NO_OF_COPIES" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tracer_doc_requirements_subcat">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRACER_DOC_REQUIREMENTS_ID" Type="int" />
+    <Property Name="TRACER_DOC_REQUIREMENTS_SUBCAT" Type="varchar" MaxLength="255" />
+    <Property Name="NO_OF_COPIES" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tracer_doc_requirements_subcat_ii">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRACER_DOC_REQUIREMENTS_SUBCAT_ID" Type="int" />
+    <Property Name="TRACER_DOC_REQUIREMENTS_SUBCAT_II" Type="varchar" MaxLength="255" />
+    <Property Name="NO_OF_COPIES" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tracking_status">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRACKING_STATUS" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="transaction_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOCUMENT_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="PROCESSING_UNIT_ID" Type="int" />
+    <Property Name="TRACKING_STATUS_ID" Type="int" />
+    <Property Name="RELEASING_STATUS_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="REMARKS" Type="varchar" MaxLength="500" />
+    <Property Name="URGENT" Type="int" />
+    <Property Name="PU_USER_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="transaction_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRANSACTION_TYPE" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="transfer_logs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AUDITOR_ID" Type="int" />
+    <Property Name="USER_ID" Type="int" />
+    <Property Name="ACCTING_RECEIVE_LOG_IG" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="OVERRIDE_STATUS_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="transmittal_records">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TRANSMITTAL_NO" Type="varchar" MaxLength="255" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="CY" Type="varchar" MaxLength="255" />
+    <Property Name="BANK" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="urgentstatus">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="STATUS" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="user_status_table">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_status" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="user_table">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="username" Type="varchar" MaxLength="250" />
+    <Property Name="password" Type="varchar" MaxLength="255" />
+    <Property Name="user_status_id" Type="int" />
+    <Property Name="user_type_id" Type="int" />
+    <Property Name="department_id" Type="int" />
+    <Property Name="fullname" Type="varchar" MaxLength="255" />
+    <Property Name="entry_date" Type="datetime" />
+    <Property Name="last_update" Type="datetime" />
+    <Property Name="contact_no" Type="varchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="user_type_table">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="user_type" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="voucher_deduction_type">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DEDUCTION_TYPE" Type="varchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="voucher_deductions">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="VOUCHER_TABLE_ID" Type="int" />
+    <Property Name="DEDUCTION" Type="varchar" MaxLength="500" />
+    <Property Name="AMOUNT" Type="double" />
+  </EntityType>
+  <EntityType Name="voucher_table">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DOC_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="PAYEE" Type="varchar" MaxLength="250" />
+    <Property Name="TIN" Type="varchar" MaxLength="50" />
+    <Property Name="RESPO" Type="varchar" MaxLength="20" />
+    <Property Name="ADDRESS" Type="varchar" MaxLength="500" />
+    <Property Name="OBR_NO" Type="varchar" MaxLength="50" />
+    <Property Name="OFFICE_UNIT" Type="varchar" MaxLength="200" />
+    <Property Name="ACCOUNT_CODES" Type="varchar" MaxLength="500" />
+    <Property Name="EXPLANATION" Type="longtext" />
+    <Property Name="GROSS_AMOUNT" Type="double" />
+    <Property Name="DEDUCTION_AMOUNT" Type="double" />
+    <Property Name="TOTAL_AMOUNT" Type="double" />
+    <Property Name="DV_NUMBER" Type="varchar" MaxLength="50" />
+    <Property Name="FUND_TYPE" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="CHECK_NUMBER" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="yearend_obligations">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="OBR_ID" Type="int" />
+    <Property Name="ENTRY_DATE" Type="datetime" />
+    <Property Name="JEV NO." Type="varchar" MaxLength="255" />
+    <Property Name="BUNDLE_NO" Type="int" />
+    <Property Name="RELEASED_DATE" Type="datetime" />
+    <Property Name="RECEIVE_DEPT_ID" Type="int" />
+    <Property Name="RECEIVE_BY" Type="int" />
+    <Property Name="RELEASE_BY" Type="int" />
+    <Property Name="FORWARDED TO" Type="int" />
+    <Property Name="STAMPED_BY_USER_ID" Type="int" />
+    <Property Name="REMARKS" Type="varchar" MaxLength="255" />
+    <Property Name="STATUS_ID" Type="int" />
+    <Property Name="RELEASED_TO" Type="varchar" MaxLength="255" />
+  </EntityType>
+</Schema>

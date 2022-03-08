@@ -1,0 +1,715 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C8C56F0-22A1-42D4-95C4-5785F23150BC}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ebayad</RootNamespace>
+    <AssemblyName>ebayad</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\enduser\enduserController.cs" />
+    <Compile Include="Controllers\loginController.cs" />
+    <Compile Include="Models\aa_records.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\account_category.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\account_tittle_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\acctg_receive_logs.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\allotment.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\allotment_items.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\april.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\auditors_note.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\auditor_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\audit_result.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\audit_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bank_details.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\budget_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\bundle_no.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cafoa.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cafoa_items.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cafoa_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cash_aa.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cash_receive.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\cash_transmitallpayroll.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\component_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\customModel.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\department_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\direct_payment.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\documents_logs.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ebayad.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ebayad.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ebayad.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ebayad.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ebayad.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fund_source.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fund_type.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fur.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fur_items.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\fur_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\liquidation_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\lr_cashtransfer_items.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\lr_cashtransfer_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\lr_sdo_items.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\lr_sdo_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\lr_travel_items.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\lr_travel_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\override_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\payroll_deductions.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\payroll_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\po_contract_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\po_items.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\po_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ppa_object_account.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ppa_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\procurement_air_items.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\procurement_air_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\procurement_cafoa_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\procurement_delivery_payment_type.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\procurement_voucher_signatory.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\rci_table_logs.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\receiving_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_admin.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_bac.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_cash.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_cbo.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_finance.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_furs.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_raao_cafoa.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_rrc.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_summrypayroll.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_toro_cafoa.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\released_docs_table_toro_cafoa_claims.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\release_docs_gso.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\release_docs_peningyearend_obli.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\release_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\remarks_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sample.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sms_container.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\summary_payroll.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\summary_payroll_items.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\supplemental.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\supplemental_destination_account.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\supplemental_source_account.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\supplemental_type.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\toro_category.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tracer.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tracer_category.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tracer_doc_requirements.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tracer_doc_requirements_subcat.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tracer_doc_requirements_subcat_ii.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\tracking_status.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\transaction_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\transaction_type.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\transfer_logs.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\transmittal_records.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\urgentstatu.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\user_status_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\user_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\user_type_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\voucher_deductions.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\voucher_deduction_type.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\voucher_table.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\yearend_obligations.cs">
+      <DependentUpon>ebayad.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="Content\themes\light\assets\avatars\face-1.jpg" />
+    <Content Include="Content\themes\light\assets\avatars\face-2.jpg" />
+    <Content Include="Content\themes\light\assets\avatars\face-3.jpg" />
+    <Content Include="Content\themes\light\assets\avatars\face-4.jpg" />
+    <Content Include="Content\themes\light\assets\avatars\face-5.jpg" />
+    <Content Include="Content\themes\light\assets\avatars\face-6.jpg" />
+    <Content Include="Content\themes\light\assets\avatars\face-7.jpg" />
+    <Content Include="Content\themes\light\assets\avatars\face-8.jpg" />
+    <Content Include="Content\themes\light\assets\images\logo.svg" />
+    <Content Include="Content\themes\light\assets\images\qrcode.svg" />
+    <Content Include="Content\themes\light\assets\products\p1.jpg" />
+    <Content Include="Content\themes\light\assets\products\p2.jpg" />
+    <Content Include="Content\themes\light\assets\products\p3.jpg" />
+    <Content Include="Content\themes\light\assets\products\p4.jpg" />
+    <Content Include="Content\themes\light\auth-confirm.html" />
+    <Content Include="Content\themes\light\auth-login-half.html" />
+    <Content Include="Content\themes\light\auth-login.html" />
+    <Content Include="Content\themes\light\auth-register.html" />
+    <Content Include="Content\themes\light\auth-resetpw.html" />
+    <Content Include="Content\themes\light\calendar.html" />
+    <Content Include="Content\themes\light\chart-apexcharts.html" />
+    <Content Include="Content\themes\light\chart-chartjs.html" />
+    <Content Include="Content\themes\light\chart-inline.html" />
+    <Content Include="Content\themes\light\contacts-grid.html" />
+    <Content Include="Content\themes\light\contacts-list.html" />
+    <Content Include="Content\themes\light\contacts-new.html" />
+    <Content Include="Content\themes\light\css\apexcharts.css" />
+    <Content Include="Content\themes\light\css\app-dark.css" />
+    <Content Include="Content\themes\light\css\app-light.css" />
+    <Content Include="Content\themes\light\css\app-rtl.css" />
+    <Content Include="Content\themes\light\css\bootstrap-datepicker.css" />
+    <Content Include="Content\themes\light\css\dataTables.bootstrap4.css" />
+    <Content Include="Content\themes\light\css\daterangepicker.css" />
+    <Content Include="Content\themes\light\css\dropzone.css" />
+    <Content Include="Content\themes\light\css\dropzone.min.css" />
+    <Content Include="Content\themes\light\css\feather.css" />
+    <Content Include="Content\themes\light\css\fullcalendar.css" />
+    <Content Include="Content\themes\light\css\jquery.steps.css" />
+    <Content Include="Content\themes\light\css\jquery.timepicker.css" />
+    <Content Include="Content\themes\light\css\perfect-scrollbar.css" />
+    <Content Include="Content\themes\light\css\quill.snow.css" />
+    <Content Include="Content\themes\light\css\select2-bootstrap4.css" />
+    <Content Include="Content\themes\light\css\select2.css" />
+    <Content Include="Content\themes\light\css\simplebar.css" />
+    <Content Include="Content\themes\light\css\uppy.min.css" />
+    <Content Include="Content\themes\light\dashboard-analytics.html" />
+    <Content Include="Content\themes\light\dashboard-saas.html" />
+    <Content Include="Content\themes\light\dashboard-sales.html" />
+    <Content Include="Content\themes\light\dashboard-system.html" />
+    <Content Include="Content\themes\light\datamaps.html" />
+    <Content Include="Content\themes\light\files-grid.html" />
+    <Content Include="Content\themes\light\files-list.html" />
+    <Content Include="Content\themes\light\fonts\feather.svg" />
+    <Content Include="Content\themes\light\form_advanced.html" />
+    <Content Include="Content\themes\light\form_elements.html" />
+    <Content Include="Content\themes\light\form_layouts.html" />
+    <Content Include="Content\themes\light\form_upload.html" />
+    <Content Include="Content\themes\light\form_validation.html" />
+    <Content Include="Content\themes\light\form_wizard.html" />
+    <Content Include="Content\themes\light\index-boxed.html" />
+    <Content Include="Content\themes\light\index-horizontal.html" />
+    <Content Include="Content\themes\light\index-vertical.html" />
+    <Content Include="Content\themes\light\index.html" />
+    <Content Include="Content\themes\light\js\apexcharts.custom.js" />
+    <Content Include="Content\themes\light\js\apexcharts.min.js" />
+    <Content Include="Content\themes\light\js\apps.js" />
+    <Content Include="Content\themes\light\js\bootstrap-datepicker.min.js" />
+    <Content Include="Content\themes\light\js\bootstrap.min.js" />
+    <Content Include="Content\themes\light\js\Chart.min.js" />
+    <Content Include="Content\themes\light\js\config.js" />
+    <Content Include="Content\themes\light\js\d3.min.js" />
+    <Content Include="Content\themes\light\js\datamaps-zoomto.js" />
+    <Content Include="Content\themes\light\js\datamaps.all.min.js" />
+    <Content Include="Content\themes\light\js\datamaps.custom.js" />
+    <Content Include="Content\themes\light\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Content\themes\light\js\daterangepicker.js" />
+    <Content Include="Content\themes\light\js\dropzone.min.js" />
+    <Content Include="Content\themes\light\js\fullcalendar.custom.js" />
+    <Content Include="Content\themes\light\js\fullcalendar.js" />
+    <Content Include="Content\themes\light\js\gauge.min.js" />
+    <Content Include="Content\themes\light\js\gtag.js" />
+    <Content Include="Content\themes\light\js\jquery.dataTables.min.js" />
+    <Content Include="Content\themes\light\js\jquery.mask.min.js" />
+    <Content Include="Content\themes\light\js\jquery.min.js" />
+    <Content Include="Content\themes\light\js\jquery.sparkline.min.js" />
+    <Content Include="Content\themes\light\js\jquery.steps.min.js" />
+    <Content Include="Content\themes\light\js\jquery.stickOnScroll.js" />
+    <Content Include="Content\themes\light\js\jquery.timepicker.js" />
+    <Content Include="Content\themes\light\js\jquery.validate.min.js" />
+    <Content Include="Content\themes\light\js\moment.min.js" />
+    <Content Include="Content\themes\light\js\perfect-scrollbar.min.js" />
+    <Content Include="Content\themes\light\js\popper.min.js" />
+    <Content Include="Content\themes\light\js\quill.min.js" />
+    <Content Include="Content\themes\light\js\select2.min.js" />
+    <Content Include="Content\themes\light\js\simplebar.min.js" />
+    <Content Include="Content\themes\light\js\tinycolor-min.js" />
+    <Content Include="Content\themes\light\js\topojson.min.js" />
+    <Content Include="Content\themes\light\js\uppy.min.js" />
+    <Content Include="Content\themes\light\page-404.html" />
+    <Content Include="Content\themes\light\page-500.html" />
+    <Content Include="Content\themes\light\page-blank.html" />
+    <Content Include="Content\themes\light\page-invoice.html" />
+    <Content Include="Content\themes\light\page-orders.html" />
+    <Content Include="Content\themes\light\page-timeline.html" />
+    <Content Include="Content\themes\light\profile-notification.html" />
+    <Content Include="Content\themes\light\profile-security.html" />
+    <Content Include="Content\themes\light\profile-settings.html" />
+    <Content Include="Content\themes\light\profile.html" />
+    <Content Include="Content\themes\light\support-center.html" />
+    <Content Include="Content\themes\light\support-faqs.html" />
+    <Content Include="Content\themes\light\support-ticket-detail.html" />
+    <Content Include="Content\themes\light\support-tickets.html" />
+    <Content Include="Content\themes\light\table_advanced.html" />
+    <Content Include="Content\themes\light\table_basic.html" />
+    <Content Include="Content\themes\light\table_datatables.html" />
+    <Content Include="Content\themes\light\ui-buttons.html" />
+    <Content Include="Content\themes\light\ui-color.html" />
+    <Content Include="Content\themes\light\ui-icons.html" />
+    <Content Include="Content\themes\light\ui-modals.html" />
+    <Content Include="Content\themes\light\ui-notification.html" />
+    <Content Include="Content\themes\light\ui-progress.html" />
+    <Content Include="Content\themes\light\ui-tabs-accordion.html" />
+    <Content Include="Content\themes\light\ui-typograpy.html" />
+    <Content Include="Content\themes\light\widgets.html" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\light\.DS_Store" />
+    <Content Include="Content\themes\light\data\contacts.json" />
+    <Content Include="Content\themes\light\data\eu.topo.json" />
+    <Content Include="Content\themes\light\fonts\feather.eot" />
+    <Content Include="Content\themes\light\fonts\feather.ttf" />
+    <Content Include="Content\themes\light\fonts\feather.woff" />
+    <EntityDeploy Include="Models\ebayad.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ebayad.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\ebayad.edmx.diagram">
+      <DependentUpon>ebayad.edmx</DependentUpon>
+    </Content>
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Models\ebayad.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ebayad.edmx</DependentUpon>
+      <LastGenOutput>ebayad.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\ebayad.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ebayad.edmx</DependentUpon>
+      <LastGenOutput>ebayad.cs</LastGenOutput>
+    </Content>
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\enduser.cshtml" />
+    <Content Include="Views\enduser\Index.cshtml" />
+    <Content Include="Views\login\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2024/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

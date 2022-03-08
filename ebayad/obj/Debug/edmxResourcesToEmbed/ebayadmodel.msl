@@ -1,0 +1,1222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ebayadModelStoreContainer" CdmEntityContainer="ebayadEntities">
+    <EntitySetMapping Name="aa_records">
+      <EntityTypeMapping TypeName="ebayadModel.aa_records">
+        <MappingFragment StoreEntitySet="aa_records">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRANSMITTAL_NO" ColumnName="TRANSMITTAL_NO" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="CY" ColumnName="CY" />
+          <ScalarProperty Name="BANK" ColumnName="BANK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="account_category">
+      <EntityTypeMapping TypeName="ebayadModel.account_category">
+        <MappingFragment StoreEntitySet="account_category">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ACCOUNT_CATEGORY1" ColumnName="ACCOUNT_CATEGORY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="account_tittle_table">
+      <EntityTypeMapping TypeName="ebayadModel.account_tittle_table">
+        <MappingFragment StoreEntitySet="account_tittle_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FUNCTION_CODE" ColumnName="FUNCTION_CODE" />
+          <ScalarProperty Name="ACCOUNT_TITTLE" ColumnName="ACCOUNT_TITTLE" />
+          <ScalarProperty Name="ACCOUNT_CATEGORY_ID" ColumnName="ACCOUNT_CATEGORY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="acctg_receive_logs">
+      <EntityTypeMapping TypeName="ebayadModel.acctg_receive_logs">
+        <MappingFragment StoreEntitySet="acctg_receive_logs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NUMBER" ColumnName="DOCUMENT_NUMBER" />
+          <ScalarProperty Name="RECEIVED_DATE" ColumnName="RECEIVED_DATE" />
+          <ScalarProperty Name="URGENT" ColumnName="URGENT" />
+          <ScalarProperty Name="AUDITOR_ID" ColumnName="AUDITOR_ID" />
+          <ScalarProperty Name="AUDIT_STATUS_ID" ColumnName="AUDIT_STATUS_ID" />
+          <ScalarProperty Name="TIME_START" ColumnName="TIME_START" />
+          <ScalarProperty Name="TIME_END" ColumnName="TIME_END" />
+          <ScalarProperty Name="AUDIT_RESULT" ColumnName="AUDIT_RESULT" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="ACCOUNTING_NUMBER" ColumnName="ACCOUNTING_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="allotments">
+      <EntityTypeMapping TypeName="ebayadModel.allotment">
+        <MappingFragment StoreEntitySet="allotment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="ARO_NUMBER" ColumnName="ARO_NUMBER" />
+          <ScalarProperty Name="DATE_ISSUE" ColumnName="DATE_ISSUE" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="allotment_items">
+      <EntityTypeMapping TypeName="ebayadModel.allotment_items">
+        <MappingFragment StoreEntitySet="allotment_items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ALLOTMENT_ID" ColumnName="ALLOTMENT_ID" />
+          <ScalarProperty Name="ACCOUNT_TITLE_ID" ColumnName="ACCOUNT_TITLE_ID" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aprils">
+      <EntityTypeMapping TypeName="ebayadModel.april">
+        <MappingFragment StoreEntitySet="april">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NUMBER" ColumnName="DOCUMENT_NUMBER" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="OFFICE" ColumnName="OFFICE" />
+          <ScalarProperty Name="RESPO_CODE" ColumnName="RESPO CODE" />
+          <ScalarProperty Name="RECEIVED_DATE" ColumnName="RECEIVED DATE" />
+          <ScalarProperty Name="RESULT" ColumnName="RESULT" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="audit_result">
+      <EntityTypeMapping TypeName="ebayadModel.audit_result">
+        <MappingFragment StoreEntitySet="audit_result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AUDIT_RESULT1" ColumnName="AUDIT_RESULT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="audit_status">
+      <EntityTypeMapping TypeName="ebayadModel.audit_status">
+        <MappingFragment StoreEntitySet="audit_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AUDIT_STATUS1" ColumnName="AUDIT_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="auditor_table">
+      <EntityTypeMapping TypeName="ebayadModel.auditor_table">
+        <MappingFragment StoreEntitySet="auditor_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+          <ScalarProperty Name="USER_TABLE_ID" ColumnName="USER_TABLE_ID" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="auditors_note">
+      <EntityTypeMapping TypeName="ebayadModel.auditors_note">
+        <MappingFragment StoreEntitySet="auditors_note">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bank_details">
+      <EntityTypeMapping TypeName="ebayadModel.bank_details">
+        <MappingFragment StoreEntitySet="bank_details">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BANK" ColumnName="BANK" />
+          <ScalarProperty Name="BANK_DESCRIPTION" ColumnName="BANK_DESCRIPTION" />
+          <ScalarProperty Name="BRANCH" ColumnName="BRANCH" />
+          <ScalarProperty Name="BANK_MANAGER" ColumnName="BANK_MANAGER" />
+          <ScalarProperty Name="BANK_ACCTNO" ColumnName="BANK_ACCTNO" />
+          <ScalarProperty Name="FUND_ID" ColumnName="FUND_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="budget_status">
+      <EntityTypeMapping TypeName="ebayadModel.budget_status">
+        <MappingFragment StoreEntitySet="budget_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BUDGET_STATUS1" ColumnName="BUDGET_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="bundle_no">
+      <EntityTypeMapping TypeName="ebayadModel.bundle_no">
+        <MappingFragment StoreEntitySet="bundle_no">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BUNDLE_NO1" ColumnName="BUNDLE_NO" />
+          <ScalarProperty Name="OBR_ID" ColumnName="OBR_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cafoas">
+      <EntityTypeMapping TypeName="ebayadModel.cafoa">
+        <MappingFragment StoreEntitySet="cafoa">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="OBLIGATION_NUMBER" ColumnName="OBLIGATION_NUMBER" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="PAYEE" ColumnName="PAYEE" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="AMOUNT_REQUESTED" ColumnName="AMOUNT_REQUESTED" />
+          <ScalarProperty Name="APPROVED_AMOUNT" ColumnName="APPROVED_AMOUNT" />
+          <ScalarProperty Name="FINAL_AMOUNT" ColumnName="FINAL_AMOUNT" />
+          <ScalarProperty Name="REQUESTING_OFFICIAL" ColumnName="REQUESTING_OFFICIAL" />
+          <ScalarProperty Name="OFFICAIL_POSITION" ColumnName="OFFICAIL_POSITION" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="FUND_TYPE" ColumnName="FUND_TYPE" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="TRANSACTION_TYPE_ID" ColumnName="TRANSACTION_TYPE_ID" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="LAST_UPDATE_BY" ColumnName="LAST_UPDATE_BY" />
+          <ScalarProperty Name="CAFOA_STATUS_ID" ColumnName="CAFOA_STATUS_ID" />
+          <ScalarProperty Name="PROCUREMT" ColumnName="PROCUREMT" />
+          <ScalarProperty Name="CANCELLED_DOC_NUM" ColumnName="CANCELLED_DOC_NUM" />
+          <ScalarProperty Name="TRACER_ID" ColumnName="TRACER_ID" />
+          <ScalarProperty Name="TRACER_CATEGORY_ID" ColumnName="TRACER_CATEGORY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cafoa_items">
+      <EntityTypeMapping TypeName="ebayadModel.cafoa_items">
+        <MappingFragment StoreEntitySet="cafoa_items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CAFOA_ID" ColumnName="CAFOA_ID" />
+          <ScalarProperty Name="FUNCTION" ColumnName="FUNCTION" />
+          <ScalarProperty Name="PPA_ACCOUNT_ID" ColumnName="PPA_ACCOUNT_ID" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="FINAL_AMOUNT" ColumnName="FINAL_AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cafoa_status">
+      <EntityTypeMapping TypeName="ebayadModel.cafoa_status">
+        <MappingFragment StoreEntitySet="cafoa_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CAFOA_STATUS1" ColumnName="CAFOA_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cash_aa">
+      <EntityTypeMapping TypeName="ebayadModel.cash_aa">
+        <MappingFragment StoreEntitySet="cash_aa">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NUMBER" ColumnName="DOCUMENT_NUMBER" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="AA_NO" ColumnName="AA_NO" />
+          <ScalarProperty Name="AA_STATUS" ColumnName="AA_STATUS" />
+          <ScalarProperty Name="FUND_SOURCE" ColumnName="FUND_SOURCE" />
+          <ScalarProperty Name="BANK_ID" ColumnName="BANK_ID" />
+          <ScalarProperty Name="DATE_PAID" ColumnName="DATE_PAID" />
+          <ScalarProperty Name="TRANSACTION_DATE" ColumnName="TRANSACTION_DATE" />
+          <ScalarProperty Name="DV_NUMBER" ColumnName="DV_NUMBER" />
+          <ScalarProperty Name="CHECK_DATE" ColumnName="CHECK_DATE" />
+          <ScalarProperty Name="CHECK_NUMBER" ColumnName="CHECK_NUMBER" />
+          <ScalarProperty Name="CHECK_STATUS" ColumnName="CHECK_STATUS" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cash_receive">
+      <EntityTypeMapping TypeName="ebayadModel.cash_receive">
+        <MappingFragment StoreEntitySet="cash_receive">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NUMBER" ColumnName="DOCUMENT_NUMBER" />
+          <ScalarProperty Name="RECEIVED_DATE" ColumnName="RECEIVED_DATE" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="CASH_SERIAL_NO" ColumnName="CASH_SERIAL_NO" />
+          <ScalarProperty Name="TRANSMITTAL_STATUS" ColumnName="TRANSMITTAL_STATUS" />
+          <ScalarProperty Name="FUND_SOURCE" ColumnName="FUND_SOURCE" />
+          <ScalarProperty Name="BANK_ID" ColumnName="BANK_ID" />
+          <ScalarProperty Name="DATE_PAID" ColumnName="DATE_PAID" />
+          <ScalarProperty Name="TRANSACTION_DATE" ColumnName="TRANSACTION_DATE" />
+          <ScalarProperty Name="ACCOUNTING_NUMBER" ColumnName="ACCOUNTING_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="cash_transmitallpayroll">
+      <EntityTypeMapping TypeName="ebayadModel.cash_transmitallpayroll">
+        <MappingFragment StoreEntitySet="cash_transmitallpayroll">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NUMBER" ColumnName="DOCUMENT_NUMBER" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="TRANSMITTAL_NO" ColumnName="TRANSMITTAL_NO" />
+          <ScalarProperty Name="TRANSMITTAL_STATUS" ColumnName="TRANSMITTAL_STATUS" />
+          <ScalarProperty Name="BANK_ID" ColumnName="BANK_ID" />
+          <ScalarProperty Name="TRANSACTION_DATE" ColumnName="TRANSACTION_DATE" />
+          <ScalarProperty Name="PAYROLL_NUMBER" ColumnName="PAYROLL_NUMBER" />
+          <ScalarProperty Name="FUND_SOURCE" ColumnName="FUND_SOURCE" />
+          <ScalarProperty Name="PAID_DATE" ColumnName="PAID_DATE" />
+          <ScalarProperty Name="FIRST_HALF_AMOUNT" ColumnName="FIRST_HALF_AMOUNT" />
+          <ScalarProperty Name="SECOND_HALF_AMOUNT" ColumnName="SECOND_HALF_AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="component_table">
+      <EntityTypeMapping TypeName="ebayadModel.component_table">
+        <MappingFragment StoreEntitySet="component_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PPD_ID" ColumnName="PPD_ID" />
+          <ScalarProperty Name="COMPONENT" ColumnName="COMPONENT" />
+          <ScalarProperty Name="NO" ColumnName="NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="department_table">
+      <EntityTypeMapping TypeName="ebayadModel.department_table">
+        <MappingFragment StoreEntitySet="department_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DEPARTMENT_NAME" ColumnName="DEPARTMENT_NAME" />
+          <ScalarProperty Name="CODE" ColumnName="CODE" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="OFFICER" ColumnName="OFFICER" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="direct_payment">
+      <EntityTypeMapping TypeName="ebayadModel.direct_payment">
+        <MappingFragment StoreEntitySet="direct_payment">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="EXPLAINATION" ColumnName="EXPLAINATION" />
+          <ScalarProperty Name="PAYEE" ColumnName="PAYEE" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="FINAL_AMOUNT" ColumnName="FINAL_AMOUNT" />
+          <ScalarProperty Name="REQUESTING_OFFICIAL" ColumnName="REQUESTING_OFFICIAL" />
+          <ScalarProperty Name="OFFICAIL_POSITION" ColumnName="OFFICAIL_POSITION" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="FUND_TYPE" ColumnName="FUND_TYPE" />
+          <ScalarProperty Name="TRANSACTION_TYPE" ColumnName="TRANSACTION_TYPE" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+          <ScalarProperty Name="TRACER_ID" ColumnName="TRACER_ID" />
+          <ScalarProperty Name="TRACER_CATEGORY_ID" ColumnName="TRACER_CATEGORY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="documents_logs">
+      <EntityTypeMapping TypeName="ebayadModel.documents_logs">
+        <MappingFragment StoreEntitySet="documents_logs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NUMBER" ColumnName="DOCUMENT_NUMBER" />
+          <ScalarProperty Name="RECEIVED_STATUS" ColumnName="RECEIVED_STATUS" />
+          <ScalarProperty Name="RECEIVED_DATE" ColumnName="RECEIVED_DATE" />
+          <ScalarProperty Name="APPROVED_STATUS" ColumnName="APPROVED_STATUS" />
+          <ScalarProperty Name="RELEASE_STATUS" ColumnName="RELEASE_STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="FUNDCONTROLLER_ID" ColumnName="FUNDCONTROLLER_ID" />
+          <ScalarProperty Name="APPROVED_DATE" ColumnName="APPROVED_DATE" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fund_source">
+      <EntityTypeMapping TypeName="ebayadModel.fund_source">
+        <MappingFragment StoreEntitySet="fund_source">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FUND_CODE" ColumnName="FUND_CODE" />
+          <ScalarProperty Name="FUND_NAME" ColumnName="FUND_NAME" />
+          <ScalarProperty Name="FUND_NO" ColumnName="FUND_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fund_type">
+      <EntityTypeMapping TypeName="ebayadModel.fund_type">
+        <MappingFragment StoreEntitySet="fund_type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FUND_TYPE1" ColumnName="FUND_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="furs">
+      <EntityTypeMapping TypeName="ebayadModel.fur">
+        <MappingFragment StoreEntitySet="fur">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="OBLIGATION_NUMBER" ColumnName="OBLIGATION_NUMBER" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="PAYEE" ColumnName="PAYEE" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="AMOUNT_REQUESTED" ColumnName="AMOUNT_REQUESTED" />
+          <ScalarProperty Name="APPROVED_AMOUNT" ColumnName="APPROVED_AMOUNT" />
+          <ScalarProperty Name="FINAL_AMOUNT" ColumnName="FINAL_AMOUNT" />
+          <ScalarProperty Name="REQUESTING_OFFICIAL" ColumnName="REQUESTING_OFFICIAL" />
+          <ScalarProperty Name="OFFICAIL_POSITION" ColumnName="OFFICAIL_POSITION" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="TRANSACTION_TYPE_ID" ColumnName="TRANSACTION_TYPE_ID" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="LAST_UPDATE_BY" ColumnName="LAST_UPDATE_BY" />
+          <ScalarProperty Name="CONTROLLER" ColumnName="CONTROLLER" />
+          <ScalarProperty Name="CONTROLLED_DATE" ColumnName="CONTROLLED_DATE" />
+          <ScalarProperty Name="BANK_NO" ColumnName="BANK_NO" />
+          <ScalarProperty Name="SL_CODE" ColumnName="SL_CODE" />
+          <ScalarProperty Name="FUR_STATUS" ColumnName="FUR_STATUS" />
+          <ScalarProperty Name="PROCUREMENT" ColumnName="PROCUREMENT" />
+          <ScalarProperty Name="CY" ColumnName="CY" />
+          <ScalarProperty Name="TRACER_ID" ColumnName="TRACER_ID" />
+          <ScalarProperty Name="TRACER_CATEGORY_ID" ColumnName="TRACER_CATEGORY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fur_items">
+      <EntityTypeMapping TypeName="ebayadModel.fur_items">
+        <MappingFragment StoreEntitySet="fur_items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="FURS_ID" ColumnName="FURS_ID" />
+          <ScalarProperty Name="FUNCTION" ColumnName="FUNCTION" />
+          <ScalarProperty Name="PPA_ACCOUNT_ID" ColumnName="PPA_ACCOUNT_ID" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="FINAL_AMOUNT" ColumnName="FINAL_AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="fur_status">
+      <EntityTypeMapping TypeName="ebayadModel.fur_status">
+        <MappingFragment StoreEntitySet="fur_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="liquidation_table">
+      <EntityTypeMapping TypeName="ebayadModel.liquidation_table">
+        <MappingFragment StoreEntitySet="liquidation_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NO" ColumnName="DOCUMENT_NO" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="CLAIMANT" ColumnName="CLAIMANT" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="LR_DATE" ColumnName="LR_DATE" />
+          <ScalarProperty Name="ORIGINAL_AMOUNT" ColumnName="ORIGINAL_AMOUNT" />
+          <ScalarProperty Name="AUDITED_AMOUNT" ColumnName="AUDITED_AMOUNT" />
+          <ScalarProperty Name="DV_NUMBER" ColumnName="DV_NUMBER" />
+          <ScalarProperty Name="DV_AMOUNT" ColumnName="DV_AMOUNT" />
+          <ScalarProperty Name="DV_DATE" ColumnName="DV_DATE" />
+          <ScalarProperty Name="REFUND_AMOUNT" ColumnName="REFUND_AMOUNT" />
+          <ScalarProperty Name="FINAL_REFUND" ColumnName="FINAL_REFUND" />
+          <ScalarProperty Name="REIMBURSE_AMOUNT" ColumnName="REIMBURSE_AMOUNT" />
+          <ScalarProperty Name="FINAL_REIMBURSE" ColumnName="FINAL_REIMBURSE" />
+          <ScalarProperty Name="LR_NUMBER" ColumnName="LR_NUMBER" />
+          <ScalarProperty Name="OR_NUMBER" ColumnName="OR_NUMBER" />
+          <ScalarProperty Name="FUND_SOURCE_ID" ColumnName="FUND_SOURCE_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lr_cashtransfer_items">
+      <EntityTypeMapping TypeName="ebayadModel.lr_cashtransfer_items">
+        <MappingFragment StoreEntitySet="lr_cashtransfer_items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LR_CASHTRANSFER_ID" ColumnName="LR_CASHTRANSFER_ID" />
+          <ScalarProperty Name="PARTICULARS" ColumnName="PARTICULARS" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="FINAL_AMOUNT" ColumnName="FINAL_AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lr_cashtransfer_table">
+      <EntityTypeMapping TypeName="ebayadModel.lr_cashtransfer_table">
+        <MappingFragment StoreEntitySet="lr_cashtransfer_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NO" ColumnName="DOCUMENT_NO" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="CLAIMANT" ColumnName="CLAIMANT" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+          <ScalarProperty Name="LR_DATE" ColumnName="LR_DATE" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="FUND_SOURCE_ID" ColumnName="FUND_SOURCE_ID" />
+          <ScalarProperty Name="DV_NUMBER" ColumnName="DV_NUMBER" />
+          <ScalarProperty Name="DV_AMOUNT" ColumnName="DV_AMOUNT" />
+          <ScalarProperty Name="LR_AMOUNT" ColumnName="LR_AMOUNT" />
+          <ScalarProperty Name="FINAL_AMOUNT" ColumnName="FINAL_AMOUNT" />
+          <ScalarProperty Name="REFUNDABLE_AMOUNT" ColumnName="REFUNDABLE_AMOUNT" />
+          <ScalarProperty Name="FINAL_REFUND" ColumnName="FINAL_REFUND" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="LAST_UPDATE_BY" ColumnName="LAST_UPDATE_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lr_sdo_items">
+      <EntityTypeMapping TypeName="ebayadModel.lr_sdo_items">
+        <MappingFragment StoreEntitySet="lr_sdo_items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LR_SDO_TABLE_ID" ColumnName="LR_SDO_TABLE_ID" />
+          <ScalarProperty Name="PAYROLL_NO" ColumnName="PAYROLL_NO" />
+          <ScalarProperty Name="PAYROLL_NAME" ColumnName="PAYROLL_NAME" />
+          <ScalarProperty Name="RESPO" ColumnName="RESPO" />
+          <ScalarProperty Name="AMOUT" ColumnName="AMOUT" />
+          <ScalarProperty Name="ACTUAL" ColumnName="ACTUAL" />
+          <ScalarProperty Name="DIFF" ColumnName="DIFF" />
+          <ScalarProperty Name="FINAL_AMOUNT" ColumnName="FINAL_AMOUNT" />
+          <ScalarProperty Name="FINAL_ACTUAL" ColumnName="FINAL_ACTUAL" />
+          <ScalarProperty Name="FINAL_DIFF" ColumnName="FINAL_DIFF" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lr_sdo_table">
+      <EntityTypeMapping TypeName="ebayadModel.lr_sdo_table">
+        <MappingFragment StoreEntitySet="lr_sdo_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NO" ColumnName="DOCUMENT_NO" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="CLAIMANT" ColumnName="CLAIMANT" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+          <ScalarProperty Name="LR_DATE" ColumnName="LR_DATE" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="FUND_SOURCE_ID" ColumnName="FUND_SOURCE_ID" />
+          <ScalarProperty Name="DV_NUMBER" ColumnName="DV_NUMBER" />
+          <ScalarProperty Name="DV_AMOUNT" ColumnName="DV_AMOUNT" />
+          <ScalarProperty Name="LR_AMOUNT" ColumnName="LR_AMOUNT" />
+          <ScalarProperty Name="FIANL_AMOUNT" ColumnName="FIANL_AMOUNT" />
+          <ScalarProperty Name="REFUNDABLE_AMOUNT" ColumnName="REFUNDABLE_AMOUNT" />
+          <ScalarProperty Name="FINAL_REFUND" ColumnName="FINAL_REFUND" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="LAST_UPDATE_BY" ColumnName="LAST_UPDATE_BY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lr_travel_items">
+      <EntityTypeMapping TypeName="ebayadModel.lr_travel_items">
+        <MappingFragment StoreEntitySet="lr_travel_items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="LR_TRAVEL_TABLE_ID" ColumnName="LR_TRAVEL_TABLE_ID" />
+          <ScalarProperty Name="DATE" ColumnName="DATE" />
+          <ScalarProperty Name="PARTICULARS" ColumnName="PARTICULARS" />
+          <ScalarProperty Name="DEPARTURE" ColumnName="DEPARTURE" />
+          <ScalarProperty Name="ARRIVAL" ColumnName="ARRIVAL" />
+          <ScalarProperty Name="TRANSPO_KIND" ColumnName="TRANSPO_KIND" />
+          <ScalarProperty Name="OTHERS" ColumnName="OTHERS" />
+          <ScalarProperty Name="FINAL_OTHERS" ColumnName="FINAL_OTHERS" />
+          <ScalarProperty Name="PER_DIEM" ColumnName="PER_DIEM" />
+          <ScalarProperty Name="FINAL_PER_DIEM" ColumnName="FINAL_PER_DIEM" />
+          <ScalarProperty Name="DTE" ColumnName="DTE" />
+          <ScalarProperty Name="FINAL_DTE" ColumnName="FINAL_DTE" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="FINAL_TOTAL" ColumnName="FINAL_TOTAL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lr_travel_table">
+      <EntityTypeMapping TypeName="ebayadModel.lr_travel_table">
+        <MappingFragment StoreEntitySet="lr_travel_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NUMBER" ColumnName="DOCUMENT_NUMBER" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="CLAIMANT" ColumnName="CLAIMANT" />
+          <ScalarProperty Name="POSISTION" ColumnName="POSISTION" />
+          <ScalarProperty Name="LR_DATE" ColumnName="LR_DATE" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="FUND_SOURCE_ID" ColumnName="FUND_SOURCE_ID" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="FINAL_AMOUNT" ColumnName="FINAL_AMOUNT" />
+          <ScalarProperty Name="DV_AMOUNT" ColumnName="DV_AMOUNT" />
+          <ScalarProperty Name="DV_NUMBER" ColumnName="DV_NUMBER" />
+          <ScalarProperty Name="DV_DATE" ColumnName="DV_DATE" />
+          <ScalarProperty Name="REFUND_AMOUNT" ColumnName="REFUND_AMOUNT" />
+          <ScalarProperty Name="FINAL_REFUND_AMOUNT" ColumnName="FINAL_REFUND_AMOUNT" />
+          <ScalarProperty Name="REIMBURSE_AMOUNT" ColumnName="REIMBURSE_AMOUNT" />
+          <ScalarProperty Name="FINAL_REIMBURSE_AMOUNT" ColumnName="FINAL_REIMBURSE_AMOUNT" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="CHECK_NUMBER" ColumnName="CHECK_NUMBER" />
+          <ScalarProperty Name="CHECK_DATE" ColumnName="CHECK_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="LAST_UPDATE_BY" ColumnName="LAST_UPDATE_BY" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="override_status">
+      <EntityTypeMapping TypeName="ebayadModel.override_status">
+        <MappingFragment StoreEntitySet="override_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payroll_deductions">
+      <EntityTypeMapping TypeName="ebayadModel.payroll_deductions">
+        <MappingFragment StoreEntitySet="payroll_deductions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PAYROLL_ID" ColumnName="PAYROLL_ID" />
+          <ScalarProperty Name="PAYROLL_DEDUCTION" ColumnName="PAYROLL_DEDUCTION" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="payroll_table">
+      <EntityTypeMapping TypeName="ebayadModel.payroll_table">
+        <MappingFragment StoreEntitySet="payroll_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="PAYEE" ColumnName="PAYEE" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="RESPO" ColumnName="RESPO" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="OBR_NO" ColumnName="OBR_NO" />
+          <ScalarProperty Name="OFFICE_UNIT" ColumnName="OFFICE_UNIT" />
+          <ScalarProperty Name="ACCOUNT_CODES" ColumnName="ACCOUNT_CODES" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="GROSS_AMOUNT" ColumnName="GROSS_AMOUNT" />
+          <ScalarProperty Name="DEDUCTION_AMOUNT" ColumnName="DEDUCTION_AMOUNT" />
+          <ScalarProperty Name="TOTAL_AMOUNT" ColumnName="TOTAL_AMOUNT" />
+          <ScalarProperty Name="PAYROLL_NUMBER" ColumnName="PAYROLL_NUMBER" />
+          <ScalarProperty Name="FUND_TYPE" ColumnName="FUND_TYPE" />
+          <ScalarProperty Name="OBR_ID" ColumnName="OBR_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="po_contract_status">
+      <EntityTypeMapping TypeName="ebayadModel.po_contract_status">
+        <MappingFragment StoreEntitySet="po_contract_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_CONTRACT_STATUS1" ColumnName="PO_CONTRACT_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="po_items">
+      <EntityTypeMapping TypeName="ebayadModel.po_items">
+        <MappingFragment StoreEntitySet="po_items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_ID" ColumnName="PO_ID" />
+          <ScalarProperty Name="CAFOA_DOCUMENT_NUMBER" ColumnName="CAFOA_DOCUMENT_NUMBER" />
+          <ScalarProperty Name="PROCUREMENT_CAFOA_STATUS" ColumnName="PROCUREMENT_CAFOA_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="po_table">
+      <EntityTypeMapping TypeName="ebayadModel.po_table">
+        <MappingFragment StoreEntitySet="po_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NO" ColumnName="DOCUMENT_NO" />
+          <ScalarProperty Name="CONTRACT_PO_NUMBER" ColumnName="CONTRACT_PO_NUMBER" />
+          <ScalarProperty Name="CONTRACT_PO_DATE" ColumnName="CONTRACT_PO_DATE" />
+          <ScalarProperty Name="CONTRACT_PO_AMOUNT" ColumnName="CONTRACT_PO_AMOUNT" />
+          <ScalarProperty Name="PO_CONTRACT_STATUS_ID" ColumnName="PO_CONTRACT_STATUS_ID" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="PAYEE" ColumnName="PAYEE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ppa_object_account">
+      <EntityTypeMapping TypeName="ebayadModel.ppa_object_account">
+        <MappingFragment StoreEntitySet="ppa_object_account">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PPA_ID" ColumnName="PPA_ID" />
+          <ScalarProperty Name="COMPONENT_ID" ColumnName="COMPONENT_ID" />
+          <ScalarProperty Name="RESOURCE" ColumnName="RESOURCE" />
+          <ScalarProperty Name="ACCOUNT_TITTLE_ID" ColumnName="ACCOUNT_TITTLE_ID" />
+          <ScalarProperty Name="BUDGET_STATUS_ID" ColumnName="BUDGET_STATUS_ID" />
+          <ScalarProperty Name="OUTPUT_NO" ColumnName="OUTPUT_NO" />
+          <ScalarProperty Name="FUND_SOURCE_ID" ColumnName="FUND_SOURCE_ID" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="ALLOTMENT" ColumnName="ALLOTMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ppa_table">
+      <EntityTypeMapping TypeName="ebayadModel.ppa_table">
+        <MappingFragment StoreEntitySet="ppa_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PPA_NAME" ColumnName="PPA_NAME" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="PPA_NO" ColumnName="PPA_NO" />
+          <ScalarProperty Name="M_Y_APPLICABLE" ColumnName="M_Y_APPLICABLE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procurement_air_items">
+      <EntityTypeMapping TypeName="ebayadModel.procurement_air_items">
+        <MappingFragment StoreEntitySet="procurement_air_items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PROCUREMENT_AIR_ID" ColumnName="PROCUREMENT_AIR_ID" />
+          <ScalarProperty Name="PO_CONTRACT_NUMBER" ColumnName="PO_CONTRACT_NUMBER" />
+          <ScalarProperty Name="PROCUREMENT_DELIVERY_PAYMENT_TYPE_ID" ColumnName="PROCUREMENT_DELIVERY_PAYMENT_TYPE_ID" />
+          <ScalarProperty Name="AIR_NUMBER" ColumnName="AIR_NUMBER" />
+          <ScalarProperty Name="AIR_DATE" ColumnName="AIR_DATE" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+          <ScalarProperty Name="AIR_STATUS_PAID" ColumnName="AIR_STATUS_PAID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procurement_air_table">
+      <EntityTypeMapping TypeName="ebayadModel.procurement_air_table">
+        <MappingFragment StoreEntitySet="procurement_air_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PO_ID" ColumnName="PO_ID" />
+          <ScalarProperty Name="PO_CONTRACT_NUMBER" ColumnName="PO_CONTRACT_NUMBER" />
+          <ScalarProperty Name="TOTAL_PO_AMOUNT" ColumnName="TOTAL_PO_AMOUNT" />
+          <ScalarProperty Name="CURRENT_AIR_AMOUNT" ColumnName="CURRENT_AIR_AMOUNT" />
+          <ScalarProperty Name="CURRENT_AIR_BALANCE" ColumnName="CURRENT_AIR_BALANCE" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procurement_cafoa_status">
+      <EntityTypeMapping TypeName="ebayadModel.procurement_cafoa_status">
+        <MappingFragment StoreEntitySet="procurement_cafoa_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PROCUREMENT_CAFOA_STATUS1" ColumnName="PROCUREMENT_CAFOA_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procurement_delivery_payment_type">
+      <EntityTypeMapping TypeName="ebayadModel.procurement_delivery_payment_type">
+        <MappingFragment StoreEntitySet="procurement_delivery_payment_type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PAYMENT_DELIVERY_TYPE" ColumnName="PAYMENT_DELIVERY_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="procurement_voucher_signatory">
+      <EntityTypeMapping TypeName="ebayadModel.procurement_voucher_signatory">
+        <MappingFragment StoreEntitySet="procurement_voucher_signatory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VOICHER_ID" ColumnName="VOICHER_ID" />
+          <ScalarProperty Name="SIGNATORY" ColumnName="SIGNATORY" />
+          <ScalarProperty Name="POSITION" ColumnName="POSITION" />
+          <ScalarProperty Name="DIRECT_PAYMENT_TABLE_ID" ColumnName="DIRECT_PAYMENT_TABLE_ID" />
+          <ScalarProperty Name="PO_TABLE_ID" ColumnName="PO_TABLE_ID" />
+          <ScalarProperty Name="CONTRACT_PO_NUMBER" ColumnName="CONTRACT_PO_NUMBER" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rci_table_logs">
+      <EntityTypeMapping TypeName="ebayadModel.rci_table_logs">
+        <MappingFragment StoreEntitySet="rci_table_logs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RELEASED_DOC_TABLE_RRC_ID" ColumnName="RELEASED_DOC_TABLE_RRC_ID" />
+          <ScalarProperty Name="DATE_ENTRY" ColumnName="DATE_ENTRY" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="receiving_status">
+      <EntityTypeMapping TypeName="ebayadModel.receiving_status">
+        <MappingFragment StoreEntitySet="receiving_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RECEIVE_STATUS" ColumnName="RECEIVE_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="release_docs_gso">
+      <EntityTypeMapping TypeName="ebayadModel.release_docs_gso">
+        <MappingFragment StoreEntitySet="release_docs_gso">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="po_table_id" ColumnName="po_table_id" />
+          <ScalarProperty Name="document_number" ColumnName="document_number" />
+          <ScalarProperty Name="batch_number" ColumnName="batch_number" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="release_date" ColumnName="release_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="release_docs_peningyearend_obli">
+      <EntityTypeMapping TypeName="ebayadModel.release_docs_peningyearend_obli">
+        <MappingFragment StoreEntitySet="release_docs_peningyearend_obli">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBR_ID" ColumnName="OBR_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="release_status">
+      <EntityTypeMapping TypeName="ebayadModel.release_status">
+        <MappingFragment StoreEntitySet="release_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="RELEASE_STATUS1" ColumnName="RELEASE_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table">
+        <MappingFragment StoreEntitySet="released_docs_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="ACCTG_RECEIVE_LOGS_ID" ColumnName="ACCTG_RECEIVE_LOGS_ID" />
+          <ScalarProperty Name="FOR_OBLIGATION" ColumnName="FOR_OBLIGATION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_admin">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_admin">
+        <MappingFragment StoreEntitySet="released_docs_table_admin">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="DOCUMENT_LOGS_ID" ColumnName="DOCUMENT_LOGS_ID" />
+          <ScalarProperty Name="TRANSACTION_TYPE_ID" ColumnName="TRANSACTION_TYPE_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_bac">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_bac">
+        <MappingFragment StoreEntitySet="released_docs_table_bac">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="PO_ID" ColumnName="PO_ID" />
+          <ScalarProperty Name="RECIPIENT_DEPARTMENT_ID" ColumnName="RECIPIENT_DEPARTMENT_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_cash">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_cash">
+        <MappingFragment StoreEntitySet="released_docs_table_cash">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="CASH_AA_ID" ColumnName="CASH_AA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_cbo">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_cbo">
+        <MappingFragment StoreEntitySet="released_docs_table_cbo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="DOCUMENT_LOG_ID" ColumnName="DOCUMENT_LOG_ID" />
+          <ScalarProperty Name="PROCUREMENT" ColumnName="PROCUREMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_finance">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_finance">
+        <MappingFragment StoreEntitySet="released_docs_table_finance">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_furs">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_furs">
+        <MappingFragment StoreEntitySet="released_docs_table_furs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="PROCUREMENT" ColumnName="PROCUREMENT" />
+          <ScalarProperty Name="DOCUMENT_LOG_ID" ColumnName="DOCUMENT_LOG_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_raao_cafoa">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_raao_cafoa">
+        <MappingFragment StoreEntitySet="released_docs_table_raao_cafoa">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="PROCUREMENT" ColumnName="PROCUREMENT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_rrc">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_rrc">
+        <MappingFragment StoreEntitySet="released_docs_table_rrc">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DV_NUMBER" ColumnName="DV_NUMBER" />
+          <ScalarProperty Name="REPORT_NO" ColumnName="REPORT_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="BANK_ID" ColumnName="BANK_ID" />
+          <ScalarProperty Name="CASH_AA_ID" ColumnName="CASH_AA_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_summrypayroll">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_summrypayroll">
+        <MappingFragment StoreEntitySet="released_docs_table_summrypayroll">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PJ_NUMBER" ColumnName="PJ_NUMBER" />
+          <ScalarProperty Name="REPORT_NO" ColumnName="REPORT_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="BANK_ID" ColumnName="BANK_ID" />
+          <ScalarProperty Name="CASH_TRANSMITALPAYROLL_ID" ColumnName="CASH_TRANSMITALPAYROLL_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_toro_cafoa">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_toro_cafoa">
+        <MappingFragment StoreEntitySet="released_docs_table_toro_cafoa">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="released_docs_table_toro_cafoa_claims">
+      <EntityTypeMapping TypeName="ebayadModel.released_docs_table_toro_cafoa_claims">
+        <MappingFragment StoreEntitySet="released_docs_table_toro_cafoa_claims">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="BATCH_NO" ColumnName="BATCH_NO" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+          <ScalarProperty Name="RELEASE_DATE" ColumnName="RELEASE_DATE" />
+          <ScalarProperty Name="CATEGORY_ID" ColumnName="CATEGORY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="remarks_table">
+      <EntityTypeMapping TypeName="ebayadModel.remarks_table">
+        <MappingFragment StoreEntitySet="remarks_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRANSACTION_ID" ColumnName="TRANSACTION_ID" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sms_container">
+      <EntityTypeMapping TypeName="ebayadModel.sms_container">
+        <MappingFragment StoreEntitySet="sms_container">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SMS_BODY" ColumnName="SMS_BODY" />
+          <ScalarProperty Name="MOBILE_NUM" ColumnName="MOBILE_NUM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="summary_payroll">
+      <EntityTypeMapping TypeName="ebayadModel.summary_payroll">
+        <MappingFragment StoreEntitySet="summary_payroll">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SDO_NAME" ColumnName="SDO_NAME" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="DOCUMENT_NUMBER" ColumnName="DOCUMENT_NUMBER" />
+          <ScalarProperty Name="TOTAL" ColumnName="TOTAL" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="FUND_TYPE" ColumnName="FUND_TYPE" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+          <ScalarProperty Name="LAST_UPDATE_BY" ColumnName="LAST_UPDATE_BY" />
+          <ScalarProperty Name="TRACER_ID" ColumnName="TRACER_ID" />
+          <ScalarProperty Name="TRACER_CATEGORY_ID" ColumnName="TRACER_CATEGORY_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="summary_payroll_items">
+      <EntityTypeMapping TypeName="ebayadModel.summary_payroll_items">
+        <MappingFragment StoreEntitySet="summary_payroll_items">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SUMMARY_PAROLL_ID" ColumnName="SUMMARY_PAROLL_ID" />
+          <ScalarProperty Name="PJ_NO" ColumnName="PJ_NO" />
+          <ScalarProperty Name="PAYEE" ColumnName="PAYEE" />
+          <ScalarProperty Name="RESPO" ColumnName="RESPO" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="supplementals">
+      <EntityTypeMapping TypeName="ebayadModel.supplemental">
+        <MappingFragment StoreEntitySet="supplemental">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DEPARTMENT_ID" ColumnName="DEPARTMENT_ID" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+          <ScalarProperty Name="SUPPLEMENTAL_TYPE_ID" ColumnName="SUPPLEMENTAL_TYPE_ID" />
+          <ScalarProperty Name="APPROVE_DATE" ColumnName="APPROVE_DATE" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="REASON_ONE" ColumnName="REASON_ONE" />
+          <ScalarProperty Name="REASON_TWO" ColumnName="REASON_TWO" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="UPDATED_BY" ColumnName="UPDATED_BY" />
+          <ScalarProperty Name="LAST_UPDATE" ColumnName="LAST_UPDATE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="supplemental_destination_account">
+      <EntityTypeMapping TypeName="ebayadModel.supplemental_destination_account">
+        <MappingFragment StoreEntitySet="supplemental_destination_account">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SUPPLEMENTAL_ID" ColumnName="SUPPLEMENTAL_ID" />
+          <ScalarProperty Name="DESTINATION_PPA_ACCOUNT" ColumnName="DESTINATION_PPA_ACCOUNT" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="supplemental_source_account">
+      <EntityTypeMapping TypeName="ebayadModel.supplemental_source_account">
+        <MappingFragment StoreEntitySet="supplemental_source_account">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SUPPLEMENTAL_ID" ColumnName="SUPPLEMENTAL_ID" />
+          <ScalarProperty Name="SOURCE_PPA_ACCOUNT" ColumnName="SOURCE_PPA_ACCOUNT" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="supplemental_type">
+      <EntityTypeMapping TypeName="ebayadModel.supplemental_type">
+        <MappingFragment StoreEntitySet="supplemental_type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SUPPLEMENTAL_TYPE1" ColumnName="SUPPLEMENTAL_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="toro_category">
+      <EntityTypeMapping TypeName="ebayadModel.toro_category">
+        <MappingFragment StoreEntitySet="toro_category">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="CATEGORY_NAME" ColumnName="CATEGORY_NAME" />
+          <ScalarProperty Name="DESCRIPTION" ColumnName="DESCRIPTION" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tracers">
+      <EntityTypeMapping TypeName="ebayadModel.tracer">
+        <MappingFragment StoreEntitySet="tracer">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRACER_NAME" ColumnName="TRACER_NAME" />
+          <ScalarProperty Name="TRACER_NO" ColumnName="TRACER_NO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tracer_category">
+      <EntityTypeMapping TypeName="ebayadModel.tracer_category">
+        <MappingFragment StoreEntitySet="tracer_category">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRACER_ID" ColumnName="TRACER_ID" />
+          <ScalarProperty Name="TRACER_SUB_CAT" ColumnName="TRACER_SUB_CAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tracer_doc_requirements">
+      <EntityTypeMapping TypeName="ebayadModel.tracer_doc_requirements">
+        <MappingFragment StoreEntitySet="tracer_doc_requirements">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRACER_CAT_ID" ColumnName="TRACER_CAT_ID" />
+          <ScalarProperty Name="REQUIREMENTS" ColumnName="REQUIREMENTS" />
+          <ScalarProperty Name="NO_OF_COPIES" ColumnName="NO_OF_COPIES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tracer_doc_requirements_subcat">
+      <EntityTypeMapping TypeName="ebayadModel.tracer_doc_requirements_subcat">
+        <MappingFragment StoreEntitySet="tracer_doc_requirements_subcat">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRACER_DOC_REQUIREMENTS_ID" ColumnName="TRACER_DOC_REQUIREMENTS_ID" />
+          <ScalarProperty Name="TRACER_DOC_REQUIREMENTS_SUBCAT1" ColumnName="TRACER_DOC_REQUIREMENTS_SUBCAT" />
+          <ScalarProperty Name="NO_OF_COPIES" ColumnName="NO_OF_COPIES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tracer_doc_requirements_subcat_ii">
+      <EntityTypeMapping TypeName="ebayadModel.tracer_doc_requirements_subcat_ii">
+        <MappingFragment StoreEntitySet="tracer_doc_requirements_subcat_ii">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRACER_DOC_REQUIREMENTS_SUBCAT_ID" ColumnName="TRACER_DOC_REQUIREMENTS_SUBCAT_ID" />
+          <ScalarProperty Name="TRACER_DOC_REQUIREMENTS_SUBCAT_II1" ColumnName="TRACER_DOC_REQUIREMENTS_SUBCAT_II" />
+          <ScalarProperty Name="NO_OF_COPIES" ColumnName="NO_OF_COPIES" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tracking_status">
+      <EntityTypeMapping TypeName="ebayadModel.tracking_status">
+        <MappingFragment StoreEntitySet="tracking_status">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRACKING_STATUS1" ColumnName="TRACKING_STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transaction_table">
+      <EntityTypeMapping TypeName="ebayadModel.transaction_table">
+        <MappingFragment StoreEntitySet="transaction_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOCUMENT_NUMBER" ColumnName="DOCUMENT_NUMBER" />
+          <ScalarProperty Name="PROCESSING_UNIT_ID" ColumnName="PROCESSING_UNIT_ID" />
+          <ScalarProperty Name="TRACKING_STATUS_ID" ColumnName="TRACKING_STATUS_ID" />
+          <ScalarProperty Name="RELEASING_STATUS_ID" ColumnName="RELEASING_STATUS_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+          <ScalarProperty Name="URGENT" ColumnName="URGENT" />
+          <ScalarProperty Name="PU_USER_ID" ColumnName="PU_USER_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transaction_type">
+      <EntityTypeMapping TypeName="ebayadModel.transaction_type">
+        <MappingFragment StoreEntitySet="transaction_type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRANSACTION_TYPE1" ColumnName="TRANSACTION_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transfer_logs">
+      <EntityTypeMapping TypeName="ebayadModel.transfer_logs">
+        <MappingFragment StoreEntitySet="transfer_logs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AUDITOR_ID" ColumnName="AUDITOR_ID" />
+          <ScalarProperty Name="USER_ID" ColumnName="USER_ID" />
+          <ScalarProperty Name="ACCTING_RECEIVE_LOG_IG" ColumnName="ACCTING_RECEIVE_LOG_IG" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="OVERRIDE_STATUS_ID" ColumnName="OVERRIDE_STATUS_ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transmittal_records">
+      <EntityTypeMapping TypeName="ebayadModel.transmittal_records">
+        <MappingFragment StoreEntitySet="transmittal_records">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TRANSMITTAL_NO" ColumnName="TRANSMITTAL_NO" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="CY" ColumnName="CY" />
+          <ScalarProperty Name="BANK" ColumnName="BANK" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="urgentstatus">
+      <EntityTypeMapping TypeName="ebayadModel.urgentstatu">
+        <MappingFragment StoreEntitySet="urgentstatus">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="STATUS" ColumnName="STATUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_status_table">
+      <EntityTypeMapping TypeName="ebayadModel.user_status_table">
+        <MappingFragment StoreEntitySet="user_status_table">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_status" ColumnName="user_status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_table">
+      <EntityTypeMapping TypeName="ebayadModel.user_table">
+        <MappingFragment StoreEntitySet="user_table">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="user_status_id" ColumnName="user_status_id" />
+          <ScalarProperty Name="user_type_id" ColumnName="user_type_id" />
+          <ScalarProperty Name="department_id" ColumnName="department_id" />
+          <ScalarProperty Name="fullname" ColumnName="fullname" />
+          <ScalarProperty Name="entry_date" ColumnName="entry_date" />
+          <ScalarProperty Name="last_update" ColumnName="last_update" />
+          <ScalarProperty Name="contact_no" ColumnName="contact_no" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="user_type_table">
+      <EntityTypeMapping TypeName="ebayadModel.user_type_table">
+        <MappingFragment StoreEntitySet="user_type_table">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="user_type" ColumnName="user_type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="voucher_deduction_type">
+      <EntityTypeMapping TypeName="ebayadModel.voucher_deduction_type">
+        <MappingFragment StoreEntitySet="voucher_deduction_type">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DEDUCTION_TYPE" ColumnName="DEDUCTION_TYPE" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="voucher_deductions">
+      <EntityTypeMapping TypeName="ebayadModel.voucher_deductions">
+        <MappingFragment StoreEntitySet="voucher_deductions">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="VOUCHER_TABLE_ID" ColumnName="VOUCHER_TABLE_ID" />
+          <ScalarProperty Name="DEDUCTION" ColumnName="DEDUCTION" />
+          <ScalarProperty Name="AMOUNT" ColumnName="AMOUNT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="voucher_table">
+      <EntityTypeMapping TypeName="ebayadModel.voucher_table">
+        <MappingFragment StoreEntitySet="voucher_table">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="DOC_NUMBER" ColumnName="DOC_NUMBER" />
+          <ScalarProperty Name="PAYEE" ColumnName="PAYEE" />
+          <ScalarProperty Name="TIN" ColumnName="TIN" />
+          <ScalarProperty Name="RESPO" ColumnName="RESPO" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="OBR_NO" ColumnName="OBR_NO" />
+          <ScalarProperty Name="OFFICE_UNIT" ColumnName="OFFICE_UNIT" />
+          <ScalarProperty Name="ACCOUNT_CODES" ColumnName="ACCOUNT_CODES" />
+          <ScalarProperty Name="EXPLANATION" ColumnName="EXPLANATION" />
+          <ScalarProperty Name="GROSS_AMOUNT" ColumnName="GROSS_AMOUNT" />
+          <ScalarProperty Name="DEDUCTION_AMOUNT" ColumnName="DEDUCTION_AMOUNT" />
+          <ScalarProperty Name="TOTAL_AMOUNT" ColumnName="TOTAL_AMOUNT" />
+          <ScalarProperty Name="DV_NUMBER" ColumnName="DV_NUMBER" />
+          <ScalarProperty Name="FUND_TYPE" ColumnName="FUND_TYPE" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="CHECK_NUMBER" ColumnName="CHECK_NUMBER" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="yearend_obligations">
+      <EntityTypeMapping TypeName="ebayadModel.yearend_obligations">
+        <MappingFragment StoreEntitySet="yearend_obligations">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OBR_ID" ColumnName="OBR_ID" />
+          <ScalarProperty Name="ENTRY_DATE" ColumnName="ENTRY_DATE" />
+          <ScalarProperty Name="JEV_NO_" ColumnName="JEV NO." />
+          <ScalarProperty Name="BUNDLE_NO" ColumnName="BUNDLE_NO" />
+          <ScalarProperty Name="RELEASED_DATE" ColumnName="RELEASED_DATE" />
+          <ScalarProperty Name="RECEIVE_DEPT_ID" ColumnName="RECEIVE_DEPT_ID" />
+          <ScalarProperty Name="RECEIVE_BY" ColumnName="RECEIVE_BY" />
+          <ScalarProperty Name="RELEASE_BY" ColumnName="RELEASE_BY" />
+          <ScalarProperty Name="FORWARDED_TO" ColumnName="FORWARDED TO" />
+          <ScalarProperty Name="STAMPED_BY_USER_ID" ColumnName="STAMPED_BY_USER_ID" />
+          <ScalarProperty Name="REMARKS" ColumnName="REMARKS" />
+          <ScalarProperty Name="STATUS_ID" ColumnName="STATUS_ID" />
+          <ScalarProperty Name="RELEASED_TO" ColumnName="RELEASED_TO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="samples">
+      <EntityTypeMapping TypeName="ebayadModel.sample">
+        <MappingFragment StoreEntitySet="sample">
+          <ScalarProperty Name="CONTACT" ColumnName="CONTACT" />
+          <ScalarProperty Name="ADDRESS" ColumnName="ADDRESS" />
+          <ScalarProperty Name="FULLNAME" ColumnName="FULLNAME" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
